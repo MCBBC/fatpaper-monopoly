@@ -1,11 +1,16 @@
 Fatpaper 联机大富翁
 =====
+游戏相关资源（模型、角色、图片）[爱发电平台](https://afdian.com/a/fatpaper)有上架⬆️；
 
 大富翁总项目，使用子模块引用各个大富翁部分，支持使用docker运行项目。
 >全局配置请到根目录的`global.config.ts`中修改。
 
+#### 小白食用教程（windows下使用docker desktop部署，使用镜像源免魔法）
+教程: https://note.youdao.com/s/1fUq7glx
+
 #### 注意⚠️
-在非localhost网络环境下部署时需要将`global.config.ts`里的`FATPAPER_HOST`修改为对应的地址或域名。
+1. 在非localhost网络环境下部署时需要将`global.config.ts`里的`FATPAPER_HOST`修改为对应的地址或域名。
+2. 搭建非本地环境时部分资源出现（403、跨域）问题：由于下行流量费用的问题，限制了除127.0.0.1和localhost以外的ip或域名的访问作者的COS资源（monopoly.sql中的资源链接），使用其他ip或域名搭建的小伙伴需要去[下载游戏资源](https://afdian.com/a/fatpaper)，在管理端进行替换相对应的资源。
 
 #### 拉取项目
 要连着子模块一起拉取到本地，
